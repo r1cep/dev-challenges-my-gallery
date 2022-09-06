@@ -5,66 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
     <link rel="icon" href="devchallenges.png" />
     <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&amp;display=swap" />
-    <title>Devchallenges</title>
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
-
-      ul {
-        padding-left: 24px;
-      }
-
-      li {
-        margin-bottom: 8px;
-      }
-
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
-      }
-
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
-      }
-
-      .welcome-text h1 {
-        font-size: 1.5rem;
-      }
-
-      .welcome-text a {
-        color: #f7542e;
-      }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&amp;display=swap" />
+    <title>My gallery</title>
   </head>
   <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank" rel="noreferrer">devchallenges.io</a>
-        </h1>
-
-        <p>If you have any questions, don't hesitate to ask on Discord. Here are 7 general steps to complete the challenge:</p>
+    <header class="heaader container">
+      <div class="profile">
+        <h1><img class="profile__img" src="./profilePhoto.png" alt="Rodney Cotton" width="156" height="156" decoding="async" /></h1>
+        <p class="profile__name">Rodney Cotton</p>
+        <p class="profile__location">Helsinki, Finland</p>
       </div>
-
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li><b>Step 3:</b> Login to Figma to checkout font, color, spacing,..</li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li><b>Step 7:</b> Share your solution on Discord, Twitter and other platforms to ask for feedback</li>
-      </ul>
-    </div>
+      <div class="badge-container">
+        <div class="badge">
+          <p class="badge__count">100</p>
+          <span class="badge__label">Post</span>
+        </div>
+        <div class="badge">
+          <p class="badge__count">2,242</p>
+          <span class="badge__label">Follower</span>
+        </div>
+        <div class="badge">
+          <p class="badge__count">1,432</p>
+          <span class="badge__label">Following</span>
+        </div>
+      </div>
+    </header>
+    <main class="main container">
+      <section class="gallery">
+        <ul class="gallery__list">
+          <li class="gallery__item"><img class="gallery__img" src="photo1.png" alt="" width="299" height="299" decoding="async" /></li>
+          <li class="gallery__item"><img class="gallery__img" src="photo2.png" alt="" width="629" height="299" decoding="async" /></li>
+          <li class="gallery__item"><img class="gallery__img" src="photo3.png" alt="" width="629" height="299" decoding="async" /></li>
+          <li class="gallery__item"><img class="gallery__img" src="photo_4.png" alt="" width="299" height="629" decoding="async" /></li>
+          <li class="gallery__item"><img class="gallery__img" src="photo5.png" alt="" width="299" height="299" decoding="async" /></li>
+          <li class="gallery__item"><img class="gallery__img" src="photo6.png" alt="" width="299" height="299" decoding="async" /></li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer container">
+      <small class="footer-signature">created by r1cep - devChallenges.io</small>
+    </footer>
     <script type="module" src="./main.js"></script>
   </body>
 </html>
